@@ -2,7 +2,7 @@
 
 cd semest1/op
 
-copy con >> %date%.log
+copy con %date%.log
 
 cd ..
 cd ..
