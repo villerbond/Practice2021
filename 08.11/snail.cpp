@@ -86,7 +86,7 @@ void snailMatrix(int **M, int size) {
 //---Next_prints---
   
   int steps = size - 1; // how much to print at time 
-  short int flag = 1;
+  short int flag = 1; // guarantees every step two times
   
   while (steps != 0) {
     switch (dir) {
@@ -117,7 +117,7 @@ void snailMatrix(int **M, int size) {
     }
     
     flag = (flag + 1) % 2;
-    steps = steps - 1 * flag;
-    dir = (dir + 1) % 4;;
+    steps = steps - 1 * flag; // "steps" will decrease every two iterates of cycle
+    dir = (dir + 1) % 4; // "dir" will change from 0 to 3 every iterate of cycle, it guarantees change of print direction
   } 
 }
