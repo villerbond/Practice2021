@@ -75,7 +75,7 @@ void snailMatrix(int **M, int size) {
   // 2 - left
   // 3 - up
 
- //---First_print---left
+ //---First_print---right
 
   for (int i = 0; i < size; ++i) {
     std::cout << M[x][y] << " ";
