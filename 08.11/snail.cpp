@@ -51,8 +51,8 @@ void printMatrix(int **M, int rows, int columns, const char pre[]) {
 int** snailMatrix(int rows, int columns) {
 
     int** M = createMatrix(rows,columns);
-    int x = 0; // current cell --- like rows
-    int y = 0; // current cell | like columns
+    int x = 0; // current cell --- like columns
+    int y = 0; // current cell | like rows
     short dir = 1; // direction;
 
     // 0 - right
