@@ -33,8 +33,7 @@ void shiftArray(int A[], int n, int k) {
     k = k % n;
     
     if (k < 0) {
-        k = -k;
-        k = n-k;
+        k = n+k;
     }
     
     reverseArray(A, 1, k);
