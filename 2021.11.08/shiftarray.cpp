@@ -8,7 +8,7 @@ int main() {
     int A[10]= {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     
     int sh;
-    std::cout << "Input positive shift: ";
+    std::cout << "Input shift: ";
     std::cin >> sh;
     
     shiftArray(A, 10, sh);
