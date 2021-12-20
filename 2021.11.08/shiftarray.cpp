@@ -30,14 +30,17 @@ void reverseArray(int* A, int begin, int end) {
 
 void shiftArray(int A[], int n, int k) {
     
-    k = k % n;
+    if (n != 0) {
+        
+        while (k < 0) {
+            k += n;
+        }
     
-    if (k < 0) {
-        k = n+k;
-    }
+        k = k % n;
     
-    reverseArray(A, 1, k);
-    reverseArray(A, k+1, n);
-    reverseArray(A, 1, n);
-    
+        reverseArray(A, 1, k);
+        reverseArray(A, k+1, n);
+        reverseArray(A, 1, n);
+        
+        }
 }
